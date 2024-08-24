@@ -1,0 +1,214 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      4787,        157]*)
+(*NotebookOutlinePosition[      5573,        183]*)
+(*  CellTagsIndexPosition[      5529,        179]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Notebook for Running the Multi-dimensional \
+ConservationLaws Program, ConservationLawsMD.m",
+  FontSize->18]], "Subtitle"],
+
+Cell[TextData[{
+  "Notebook created on June 13, 2010 in ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  " 5.0.   The ConservationLawsMD.m package was tested with ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  " versions 5, 6, and 7."
+}], "Text"],
+
+Cell["\<\
+Set the directory to the location where the files for ConservationLawsMD.m \
+are stored.  All data files must be in the same directory. 
+Format:  SetDirectory[\"d:\\\\myPCDirectory\\\\subdirectory\"]  \
+\>", "Text"],
+
+Cell[BoxData[
+    \(SetDirectory["\<e:\\data\\demoConservationLawsMD\>"]\)], "Input"],
+
+Cell["Load the program file into the notebook.", "Text"],
+
+Cell[BoxData[
+    \(Get["\<ConservationLawsMD.m\>"]\)], "Input",
+  CellChangeTimes -> {{3.4798487190430036`*^9, 3.4798487223730035`*^9}}],
+
+Cell["\<\
+ConservationLawsMD[] computes local conservation laws for polynomial partial \
+differential equations (PDEs).  A PDE can be chosen from the menu when the \
+program starts, or can be entered via a separate data file.\
+\>", "Text"],
+
+Cell[TextData[{
+  "ConservationLawsMD[options] allows the user to view intermediate \
+calculations by setting ",
+  StyleBox["Verbose -> All", "Input"],
+  " or ",
+  StyleBox["Verbose -> Minimal", "Input"]
+}], "Text"],
+
+Cell["\<\
+\"Verbose\" controls the amount of output the user will see as the program \
+runs.\
+\>", "Text"],
+
+Cell[BoxData[
+    \(\(?Verbose\)\)], "Input"],
+
+Cell["\<\
+Start the program.  The program may prompt the user for instructions as it \
+runs.  To avoid entering the instructions during execution, all options can \
+be preset in the data file for the PDE.  The data file names are listed next \
+to each PDE in the menu. To run your own data file, select the option tt in \
+the menu. \
+\>", "Text"],
+
+Cell[BoxData[
+    \(ConservationLawsMD[Verbose \[Rule] All]\)], "Input"],
+
+Cell[TextData[{
+  "The comands ",
+  StyleBox["conservationlaws", "Input"],
+  " and ",
+  StyleBox["independentconservationlaws", "Input"],
+  " give the user access to computations in ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  " syntax."
+}], "Text"],
+
+Cell[TextData[{
+  StyleBox["conservationlaws",
+    FontFamily->"Courier",
+    FontWeight->"Bold"],
+  " gives a complete listing in ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  " notation of densities and their associated fluxes as determined by the \
+program."
+}], "Text"],
+
+Cell[BoxData[
+    \(conservationlaws\)], "Input"],
+
+Cell[TextData[{
+  StyleBox["independentconservationlaws",
+    FontFamily->"Courier",
+    FontWeight->"Bold"],
+  " gives a listing in ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  " notation of densities and their associated fluxes where all densities are \
+independent."
+}], "Text"],
+
+Cell[BoxData[
+    StyleBox["independentconservationlaws",
+      FontFamily->"Courier",
+      FontWeight->"Bold"]], "Input"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 715}},
+WindowSize->{1261, 682},
+WindowMargins->{{-47, Automatic}, {Automatic, 10}},
+DockedCells -> FEPrivate`FrontEndResource[ "FEExpressions", \
+"CompatibilityToolbar"],
+Magnification->2,
+StyleDefinitions -> "Default.nb"
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 147, 2, 130, "Subtitle"],
+Cell[1926, 57, 264, 8, 94, "Text"],
+Cell[2193, 67, 225, 4, 127, "Text"],
+Cell[2421, 73, 85, 1, 55, "Input"],
+Cell[2509, 76, 56, 0, 61, "Text"],
+Cell[2568, 78, 137, 2, 55, "Input"],
+Cell[2708, 82, 239, 4, 94, "Text"],
+Cell[2950, 88, 215, 6, 96, "Text"],
+Cell[3168, 96, 106, 3, 61, "Text"],
+Cell[3277, 101, 45, 1, 55, "Input"],
+Cell[3325, 104, 346, 6, 127, "Text"],
+Cell[3674, 112, 72, 1, 55, "Input"],
+Cell[3749, 115, 261, 9, 64, "Text"],
+Cell[4013, 126, 284, 9, 64, "Text"],
+Cell[4300, 137, 49, 1, 56, "Input"],
+Cell[4352, 140, 293, 9, 64, "Text"],
+Cell[4648, 151, 123, 3, 56, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
